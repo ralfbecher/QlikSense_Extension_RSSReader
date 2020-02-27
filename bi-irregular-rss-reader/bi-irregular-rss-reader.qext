@@ -1,0 +1,9 @@
+{
+	"name" : "RSS Reader",
+	"description" : "Extension to read and render an RSS feed.",
+	"icon" : "extension",
+	"type" : "visualization",
+	"version": "0.3",
+	"preview" : "rssicon.png",
+	"author": "Ralf Becher, irregular.bi"
+}

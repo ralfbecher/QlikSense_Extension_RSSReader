@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div ng-if="vm.spinner" class="spinner-center">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+    <!-- <span ng-if="!vm.spinner"><strong>{{vm.channel.title}}</strong></span> -->
+    <div ng-if="!vm.spinner" class="feed-row">
+        <ul>
+            <li ng-repeat="item in vm.channel.items track by $index" class="item-element">
+                <h5 class="item-title"><a href={{item.link}} target="_blank">{{item.title}}</a></h5>
+                <p ng-if="!vm.renderTextAsHtml" class="item-description">{{item.description}}</p>
+                <p ng-if="vm.renderTextAsHtml" class="item-description" ng-bind-html="item.description"></p>
+                <span class="item-pubdate">{{item.pubDate}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

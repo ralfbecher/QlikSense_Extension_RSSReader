@@ -1,0 +1,74 @@
+.qv-object-bi-irregular-rss-reader div.qv-object-content-container {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.qv-object-bi-irregular-rss-reader .item-element {
+	margin-bottom: 10px;
+}
+
+.qv-object-bi-irregular-rss-reader .item-title {
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+
+.qv-object-bi-irregular-rss-reader .item-description {
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+
+.qv-object-bi-irregular-rss-reader .item-pubdate {
+	font-size: 12px;
+}
+
+.qv-object-bi-irregular-rss-reader .wrapper {
+	height: 100%;
+}
+
+.qv-object-bi-irregular-rss-reader .spinner-center {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.qv-object-bi-irregular-rss-reader .lds-ripple {
+	/* display: inline-block; */
+	position: relative;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+}
+
+.qv-object-bi-irregular-rss-reader .lds-ripple div {
+	position: absolute;
+	border: 4px solid #696969;
+	opacity: 1;
+	border-radius: 50%;
+	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.qv-object-bi-irregular-rss-reader .lds-ripple div:nth-child(2) {
+	animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+	0% {
+	  top: 36px;
+	  left: 36px;
+	  width: 0;
+	  height: 0;
+	  opacity: 1;
+	}
+	100% {
+	  top: 0px;
+	  left: 0px;
+	  width: 72px;
+	  height: 72px;
+	  opacity: 0;
+	}
+}
