@@ -1,5 +1,5 @@
-Qlik Sense Extensions RSS Reader
-================================
+Qlik Sense Extension RSS Reader
+===============================
 
 *RSS is dead, long live RSS!*
 
